@@ -8,12 +8,12 @@ const initProfile = {
 }
 
 const Opponent = () => {
-  const [profile, setProfile] = useState(initProfile);
-    const getProfile = async () => {
+  const [pokemon, setPokemon] = useState(initProfile);
+    const getPokemon = async () => {
       const response = await fetch("https://pokeapi.co/api/v2/pokemon/4");
       const json = await response.json();
 
-      setProfile({
+      setPokemon({
           id: json.id,
           name: json.name,
           image: json.sprites.other.dream_world.front_default,
@@ -23,13 +23,13 @@ const Opponent = () => {
 
 
   useEffect(() => {
-    getProfile();
+    getPokemon();
   }, [])
     return (
     <div className="char">
-        <h1>{profile.name}</h1>
-        <img src={profile.image} alt="Charmander" />
-        <h3>{`Type: ${profile.type}`}</h3>
+        <h1>{pokemon.name}</h1>
+        <img src={pokemon.image} alt="Charmander" />
+        <h3>{`Type: ${pokemon.type}`}</h3>
         <ul className="attack-list"></ul>
     </div>
   )

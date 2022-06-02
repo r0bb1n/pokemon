@@ -1,8 +1,21 @@
+import {useState} from 'react'
+
+
+const randomNum = (max, min) => {
+    if(min === undefined || min === '' || min === null){
+        min = 0;
+    }
+
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
 // gamedata contains all the information and vars for the characters
 const gameData = {
     step: 1,
     hero: {},
     enemy: {},
+    curAttack: {},
+    attackName: '',
 
     characters: [
         {
@@ -48,13 +61,7 @@ const gameData = {
 
 
 // random num generator for attack
-const randomNum = (max, min) => {
-    if(min === undefined || min === '' || min === null){
-        min = 0;
-    }
 
-    return Math.floor(Math.random() * (max - min) + min);
-}
 
 // attack multiplier based on weakness (could add resistance but has chosen not to)
 const attackMultiplier = (attacker, curAttack) => {
@@ -71,5 +78,6 @@ const attackMultiplier = (attacker, curAttack) => {
     return curAttack.hp;
 }
 
-// HP bar depletion
-let health = document.getElementById("health")
+
+
+export default gameData;

@@ -1,17 +1,24 @@
 import Fetch from './components/Fetch'
 import Opponent from './components/Opponent';
+import Attack from './components/Attack';
+
 
 
 const App = () => {
 
    
   return (
-    <div className="main">
-      <div className="main__left">
-        <Fetch />
+    <div className="arena">
+      <div className="main">
+        <div className="main__left">
+          <Fetch />
+        </div>
+        <div className="main__right">
+          <Opponent />
+        </div>
       </div>
-      <div className="main__right">
-        <Opponent />
+      <div>
+        <Attack />
       </div>
     </div>
   );

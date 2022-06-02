@@ -12,6 +12,11 @@ code {
       monospace;
 }
   
+.arena {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .main {
     display: flex;
@@ -21,7 +26,42 @@ code {
     margin: 0 auto;
 }
 
+.main__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .bulb {
     background-color: #b5e48c;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#health {
+  width: 200px;
+  margin: 15px;
+  height: 15px;
+}
+
+progress::-moz-progress-bar {
+  background: lightcoral;
+}
+
+progress::-webkit-progress-value {
+  background: red;
+}
+
+progress::-webkit-progress-bar {
+  background: red;
+}
+
+.attack {
+  display: flex;
+    flex-direction: row;
+    width: 70vw;
+    justify-content: space-between;
+    margin: 0 auto;
 }

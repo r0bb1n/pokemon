@@ -37,4 +37,6 @@ const Fetch = () => {
   )
 };
 
-export default Fetch
+
+
+export default Fetch;
