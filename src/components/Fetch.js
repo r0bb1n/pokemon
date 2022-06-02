@@ -31,8 +31,6 @@ const Fetch = () => {
         <h1>{profile.name}</h1>
         <img src={profile.image} alt="Bulbasaur" />
         <h3>{`Type: ${profile.type}`}</h3>
-        <ul className="attack-list"></ul>
-        <progress id="health" value="100" max="100"></progress>
     </div>
   )
 };
