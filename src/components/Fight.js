@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-
+// random num generator for attack
 const randomNum = (max, min) => {
     if(min === undefined || min === '' || min === null){
         min = 0;
@@ -9,13 +9,14 @@ const randomNum = (max, min) => {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-// gamedata contains all the information and vars for the characters
+// gamedata contains all the information and variables for the characters
 const gameData = {
     step: 1,
     hero: {},
     enemy: {},
     curAttack: {},
     attackName: '',
+
 
     characters: [
         {
@@ -60,7 +61,7 @@ const gameData = {
 }
 
 
-// random num generator for attack
+
 
 
 // attack multiplier based on weakness (could add resistance but has chosen not to)

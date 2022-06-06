@@ -1,0 +1,42 @@
+{
+    "characters": [
+        {
+            "name": "Bulbausar",
+            "type": "grass",
+            "weakness": ["fire"],
+            "hp": {
+                "total": 500,
+                "current": 500
+            },
+            "attacks": [
+                {
+                    "name": "tackle",
+                    "hp": "randomNum(40, 20)"
+                },
+                {
+                    "name": "vine whip",
+                    "hp": "randomNum(60, 45)"
+                }
+            ]
+        },
+        {
+            "name": "Charmander",
+            "type": "fire",
+            "weakness": ["water"],
+            "hp": {
+                "total": 500,
+                "current": 500
+            },
+            "attacks": [
+                {
+                    "name": "ember",
+                    "hp": "randomNum(40, 20)"
+                },
+                {
+                    "name": "flamethrower",
+                    "hp": "randomNum(60, 45)"
+                }
+            ]
+        }
+    ]
+}

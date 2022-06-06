@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import Attack from './Attack';
+
 
 const initProfile = {
     id: null,
@@ -31,7 +31,7 @@ const Opponent = () => {
         <h1>{pokemon.name}</h1>
         <img src={pokemon.image} alt="Charmander" />
         <h3>{`Type: ${pokemon.type}`}</h3>
-        <Attack />
+        
     </div>
   )
 };
