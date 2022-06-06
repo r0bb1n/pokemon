@@ -7,7 +7,7 @@ const Attack = () => {
   const [count, setCount] = useState(100)
     const [counte, setCounte] = useState(100)
 
-  const x = (min, max) => Math.floor(Math.random() * (max - min - 1));
+  const x = (min, max) => Math.floor(Math.random() * (max - min - 1) - min);
   
 
   function decrement() {
