@@ -16,14 +16,20 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: bisque;
+  height: 100vh;
 }
 
 .main {
     display: flex;
     flex-direction: row;
     width: 70vw;
-    justify-content: space-between;
+    height: 50vh;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 auto;
+    border: 4px dotted;
+    border-radius: 15px;
 }
 
 .main__left {
@@ -33,11 +39,28 @@ code {
 }
 
 .bulb {
-    background-color: #b5e48c;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #b5e48c;
+  border-radius: 15px;
+  border: 5px solid white;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bulb img {
+  width: 175px;
+  height: 201px;
+}
+
+.char {
+  background-color: #e76f51;
+  border-radius: 15px;
+  border: 5px solid white;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #health {
@@ -60,8 +83,30 @@ progress::-webkit-progress-bar {
 
 .attack {
   display: flex;
-    flex-direction: row;
-    width: 70vw;
-    justify-content: space-between;
-    margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stuff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 100px;
+  height: 25px;
+  border: 2px solid green;
+  background-color: #b5e48c;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: green;
 }

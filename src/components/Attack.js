@@ -1,28 +1,39 @@
 import React from 'react'
 import {useState} from 'react'
 
-const Attack = (max, min) => {
+
+
+
+const Attack = () => {
   const [count, setCount] = useState(100)
 
+  const x = (min, max) => Math.floor(Math.random() * (max - min - 1));
+  
+
   function decrement() {
-      setCount(prevCount => prevCount - 1)
+      if(count <= 0) {
+          return(
+              alert('Game is over')
+          )
+      } else {
+        setCount(prevCount => prevCount - x(-30, -10));
+      }
+      
   }
 
   
   
     return (
     <div className="attack">
-        <div>
-            <h1>{count}</h1>
+        <div className="stuff">
+            <h1>HP: {count}</h1>
             <progress id="health" value={count} max="100"></progress>
             <button onClick={decrement}>Attack</button>
-        </div>
-        <div>
-            <h1>{count}</h1>
-            <progress id="health" value={count} max="100"></progress>
         </div>
     </div>
   )
 }
+
+
 
 export default Attack

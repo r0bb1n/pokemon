@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import Attack from './Attack';
 
 
 const initProfile = {
@@ -31,6 +32,7 @@ const Fetch = () => {
         <h1>{profile.name}</h1>
         <img src={profile.image} alt="Bulbasaur" />
         <h3>{`Type: ${profile.type}`}</h3>
+        <Attack />
     </div>
   )
 };
