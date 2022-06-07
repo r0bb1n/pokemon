@@ -38,12 +38,12 @@ const Attack = () => {
         <div className="stuff">
             <h2>HP: {counte}/100</h2>
             <progress id="health" value={counte} max="100"></progress>
-            <button onClick={decrement}>Attack</button>
+            <button className="abtn" onClick={decrement}>Attack</button>
         </div>
         <div className="stuff">
             <h2>HP: {count}/100</h2>
             <progress id="healthe" value={count} max="100"></progress>
-            <button onClick={lower}>Attack</button>
+            <button className="abtn" onClick={lower}>Attack</button>
         </div>
     </div>
   )

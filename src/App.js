@@ -1,35 +1,37 @@
-import { useState } from "react";
-import UserData from "./Data/User";
+import Arena from "./components/Menu/Arena";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './index.css';
-import Account from './Account';
-import Start from './Start';
-import Home from "./Home";
-import Choose from './Choose';
-import Rival from './Rival';
+import Account from './components/Menu/Account'
+import Start from './components/Menu/Start'
+import Home from './components/Menu/Home'
+import Choose from './components/Menu/Choose'
+import Rival from './components/Menu/Rival'
+
 
 
 function App() {
 
-  const [feedback, setFeedback] = useState(UserData);
-
-console.log(feedback);
+  
 
   return (
 
     <BrowserRouter>
-    <div className="container">
-    <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/Account" element={<Account />} />
-    <Route path="/Start" element={<Start />} />
-    </Routes>
-    </div>
     <div>
-    <Routes>
-    <Route path="/Choose" element={<Choose />} />
-    <Route path="/Rival" element={<Rival />} />
-    </Routes>
+      <div className="container">
+        <Routes>
+       <Route path="/" element={<Home />} id="container" />
+       <Route path="/Account" element={<Account />} />
+        <Route path="/Start" element={<Start />} />
+        </Routes>
+     </div>
+     <div className="notContainer">
+       <Routes>
+        <Route path="/Choose" element={<Choose />} />
+        <Route path="/Rival" element={<Rival />} />
+        </Routes>
+        <Routes>
+       <Route path="/Arena" element={<Arena />} />
+        </Routes>
+     </div>
     </div>
     </BrowserRouter>
   );

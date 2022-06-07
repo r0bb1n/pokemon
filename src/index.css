@@ -1,0 +1,275 @@
+body {
+  --color-primary: #009579;
+  --color-primary-dark: #009579;
+  --color-secondary: #000c95;
+  --color-error: #950000;
+  --color-success: #30eb18;
+  --border-radius: 4px;
+
+  margin:0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background: url(./images/background.jpg);
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+  
+.arena {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 55vh;
+}
+
+.stadium {
+  width: 70vw;
+  height: 55vh;
+  border: 4px solid;
+  border-radius: 15px;
+  background-color: bisque;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.main__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bulb {
+  background-color: #b5e48c;
+  border-radius: 15px;
+  border: 5px solid white;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bulb img {
+  width: 175px;
+  height: 201px;
+}
+
+.char {
+  background-color: #e76f51;
+  border-radius: 15px;
+  border: 5px solid white;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#health {
+  width: 200px;
+  margin: 15px;
+  height: 15px;
+}
+
+#healthe {
+  width: 200px;
+  margin: 15px;
+  height: 15px;
+}
+
+progress::-moz-progress-bar {
+  background: lightcoral;
+}
+
+progress::-webkit-progress-value {
+  background: red;
+}
+
+progress::-webkit-progress-bar {
+  background: red;
+}
+
+.attack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70vw;
+}
+
+.stuff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.abtn {
+  width: 100px;
+  height: 25px;
+  border: 2px solid green;
+  background-color: #b5e48c;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.abtn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: green;
+}
+
+.startbtn {
+  text-align: center;
+}
+
+.container {
+  width: 400px;
+  max-width: 400px;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0 0 0 0.2);
+  border-radius: var(--border-radius);
+  background: #f677e5;
+}
+
+.container,
+.form__input,
+.form__button {
+  font-family: 'Cherry Cream Soda', cursive;
+  font-size: 20px;
+}
+
+.form--hidden {
+  display: none;
+}
+
+.form > *:first-child {
+  margin-top: 0;
+}
+
+.form > *:last-child {
+  margin-bottom: 0;
+}
+
+.form__title{
+  margin-bottom: 2rem;
+  text-align: center;
+
+}
+
+.form__message {
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+
+.form__message--success {
+color: var(--color-success);
+}
+
+.form__message--error {
+  color: var(--color-error);
+}
+
+.form__input-group {
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border: 1px solid #dddddd;
+  outline: none;
+  background: #eeeeee;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+  border-color: var(--color-primary);
+  background: #ffffff;
+}
+
+.form__input--error {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.form__button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+  background: var(--color-primary);
+}
+
+.form__button:hover {
+  background: var(--color-secondary);
+}
+
+.form__button:active {
+  transform: scale(0.96)
+}
+
+.form__text {
+  text-align: center;
+}
+
+.form__link {
+  color: var(--color-primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}
+
+.choose-img{
+  background-image: url(./images/choose.jpg) ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 900px;
+  max-width: 900px;
+  height: 900px;
+  max-height: 900px;
+
+}
+
+.pkmn__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rival-img{
+
+  background-image: url(./images/rival.jpg) ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 800px;
+  max-width: 800px;
+  height:800px;
+  max-height: 800px;
+  
+}

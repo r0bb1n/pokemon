@@ -1,7 +1,7 @@
 import React from 'react'
-import Fetch from './Fetch'
-import Opponent from './Opponent'
-import Attack from './Attack'
+import Fetch from '../PokeAPI/Fetch'
+import Opponent from '../PokeAPI/Opponent'
+import Attack from '../Combat/Attack'
 
 const Arena = () => {
   return (
