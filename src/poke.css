@@ -23,7 +23,9 @@ code {
 .stadium {
   width: 70vw;
   height: 55vh;
-  border: 4px dotted;
+  border: 4px solid;
+  border-radius: 15px;
+  background-color: white;
 }
 
 .main {
