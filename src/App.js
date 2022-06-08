@@ -16,14 +16,14 @@ function App() {
 
     <BrowserRouter>
     <div>
-      <div className="container">
+      <div>
         <Routes>
-       <Route path="/" element={<Home />} id="container" />
+       <Route path="/" element={<Home />}  />
        <Route path="/Account" element={<Account />} />
         <Route path="/Start" element={<Start />} />
         </Routes>
      </div>
-     <div className="notContainer">
+     <div>
        <Routes>
         <Route path="/Choose" element={<Choose />} />
         <Route path="/Rival" element={<Rival />} />

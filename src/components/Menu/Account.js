@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 function Account() {
     return (
-        <form class="form" id="createAccount">
+        <form class="container" id="createAccount">
         <h1 class="form__title">Create Account</h1>
         <div class="form__message form__message--error"></div>
         <div class="form__input-group">

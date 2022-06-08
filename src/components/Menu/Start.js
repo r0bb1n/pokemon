@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 function Start() {
     return (
-          <form class="form" id="login">
+          <form class="container" id="login">
             <h1 class="form__title">Login</h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
